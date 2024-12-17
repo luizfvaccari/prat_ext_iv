@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/autenticacao.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<title>ARV-DESK</title>
+
+</head>
+<body class="body-forgot-password">
+	<script>
+		function goBack(){
+			window.location = 'index.html';
+		}
+	</script>
+<div class="back forgot-password">
+<div class="content">
+	<form class="form-forgot-password" method="post" action="cad-chamado-senha.php">
+		
+			<h1>HELP DESK PREFEITURA DE JOACABA</h1>
+			<h2>Preencha o formulário para enviar a solicitação ao administrador:</h1>
+	
+			<fieldset class="grupo">
+				
+					<div class="campo">
+						<label for=NomeRequerente>Nome do Requerente/Solicitante:</label>
+							<input type="text" name="NomeRequerente" id="NomeRequerente" placeholder="Digite o seu nome" required>
+					</div>
+					<div class="campo">
+						<label for="email">E-mail:</label>
+						<input type="text" name="email" id="email" placeholder="Digite o seu e-mail" required>
+					</div>
+					
+			</fieldset>		
+			
+			<fieldset class="grupo">
+				<div class="campo">
+					<label for=setor>Setor / Secretaria / Local Trabalho:</label>
+						<input type="text" name="setor" id="setor" placeholder="Digite o seu setor" required>
+				</div>
+				<div class="campo select">
+						<label for=atribuicao>Atribuir para:</label>
+						<select name="atribuicao" id="atribuicao" disabled>
+							<option>---</option>
+							<option value="1" selected>Administrador</option>
+						</select>
+				</div>
+		
+					
+			</fieldset>
+        	<fieldset>
+				<div class="campo">
+            		<label for="descricao">Descrição do Problema:</label><br>
+            		<textarea rows="6" style="width: 32em" id="descricao" name="descricao" placeholder="Favor inserir seus dados completos para atendimento a solicitação!"></textarea>
+        		</div><br>
+			
+			</fieldset>
+			<fieldset class="action">
+				<div>
+					<button type="" name="cancelar" value="cancelar" class="default" onclick="goBack()" style="margin-right: 10px;">Cancelar</button>
+
+					<button type="reset" name="limpar" value="limpar" class="default" style="margin-right: 10px;">Limpar</button>
+			
+					<button type="submit" name="enviar" value="enviar">Enviar</button>
+					
+				</div>
+			</fieldset>
+	</form>
+	</div>
+	
+</body>
+</html>
