@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	background-position: center;
+	font-family: sans-serif;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	-o-background-size: cover;
+	background: cover;
+	width: 100vw;
+  	height: 100vh;
+}
+.flex-column{
+	width: 100%;
+	display:flex;
+	height: 100vh;
+}
+.left{
+    justify-content: center;
+    flex-direction: column;
+    background: #134c6f;
+    display: flex;
+    width: 65%;
+    align-items: center;
+}
+.left .text-container{
+	color: white;
+    margin: 5px;
+    text-align: center;
+    padding: 20px;
+}
+.left .text-container h1{
+	font-size:40px;
+}
+.left .text-container p{
+	font-size:20px;
+}
+.left img{
+	width: 100px;
+    height: auto;
+    position: relative;
+   
+}
+.loginbox {
+	align-self: center;
+	text-align: center;
+    flex-direction: column;
+    display: flex;
+    width: 35%;
+	background: #fff;
+	color: #134c6f;
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+
+.avatar {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: none;
+}
+
+h1 {
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+
+}
+
+.loginbox p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.loginbox input, .form-forgot-password input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"], .form-forgot-password input[type="text"]{
+	border: none;
+	border-bottom: 1px solid #000;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #000;
+	font-size: 16px;
+}
+
+.loginbox input[type="submit"], .form-forgot-password button{
+	border: none;
+	outline: none;
+	width: 200px;
+	height: 40px;
+	margin-top:20px;
+	background: #134c6f;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.form-forgot-password button{
+	width:150px;
+}
+.form-forgot-password button.default{
+	border: 1px solid #134c6f;
+	background-color: #fff;
+	color:#134c6f;
+}
+.loginbox input[type="submit"]:hover, .form-forgot-password button:hover{
+	cursor: pointer;
+	opacity:0.6;
+}
+
+.loginbox i{
+	font-size: 60px;
+	padding-bottom: 20px;
+}
+
+.loginbox a {
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: #134c6f;
+}
+.body-forgot-password{
+	background: #134c6f;
+	overflow: hidden;
+}
+.forgot-password{
+	margin: 50px;
+    justify-content: center;
+    display: flex;
+}
+.form-forgot-password i{
+	font-size: 60px;
+}
+.form-forgot-password a.go-back{
+	font-size: 12px;
+	text-decoration: underline;
+	color:#134c6f;
+	font-weight: 600;
+}
+.forgot-password .content{
+	padding: 40px;
+    border-radius: 8px;
+    background: #fff;
+}
+.forgot-password .content h2{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.form-forgot-password fieldset{
+    padding: 20px;
+    display: flex;
+    border: none;
+}
+.form-forgot-password fieldset .campo{
+    padding-right: 20px;
+	width: 50%;
+}
+.form-forgot-password fieldset .campo.select{
+	display: flex;
+    flex-direction: column;
+}
+.form-forgot-password fieldset .campo.select label{
+	padding-bottom: 10px;
+}
+.form-forgot-password fieldset .campo.select select{
+	width:100%;
+	padding:10px;
+}
+.form-forgot-password fieldset .campo label{
+	font-size: 14px;
+}
+.form-forgot-password fieldset textarea{
+	margin-top: 10px;
+	padding:5px;
+}
+.form-forgot-password .action{
+	justify-content: center;
+}
+.form-forgot-password{ 
+	color: #134c6f;
+}
